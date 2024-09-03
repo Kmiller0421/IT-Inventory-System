@@ -1,21 +1,55 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>{{ title }}</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Core Solutions</title>
+    <link rel="stylesheet" href="../css/portal.css">
 </head>
 <body>
-    <h1>{{ title }}</h1>
- 
-    {% if user_authenticated %}
-        <h1>Welcome, {{ username }}!</h1>
-    {% else %}
-        <p>Please log in to access the content.</p>
-    {% endif %}
- 
-    <ul>
-        {% for item in items %}
-            <li>{{ item }}</li>
-        {% endfor %}
-    </ul>
-</body>
+  </head>
+  <body>
+
+
+    <div class="wrapper-container">
+        <section class="Portal">
+
+            <div class="logo-section">
+                <img src="myapp/static/core-solutions-high-resolution-logo-transparent.png" alt="Core Solutions Logo" width="400" height="170">
+            </div>
+
+            <div class="login-section">
+                <form class="login-form">
+
+                    <h3>Login</h3>
+    
+                    <!-- Username textbox field -->
+                    <div class="username-group">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+    
+                    <!-- Password textbox field -->
+                    <div class="password-group">
+                        <input type="text" id="username" name="password" placeholder="Password">
+                    </div>
+    
+                    <!-- Login button -->
+                    <div class="login-button">
+                        <input type="submit" id="submit" name="submit" value="Login">
+                    </div>
+    
+                    <!-- Resources -->
+                    <div class="resources">
+                        <a href="" id="">Are you a Admin? Login Here</a></br>
+                        <a href="" id="">Forgot Password?</a>
+                    </div>
+    
+                </form>
+            </div>
+            
+        </section>
+    </div>
+
+  </body>
 </html>
