@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: "Ubuntu", sans-serif;
+    letter-spacing: 1px;
     /*outline: 2px solid red;*/
 }
 
@@ -23,7 +24,7 @@ body{
 }
 
 img {
-    margin: 50% 10% 50% 10%;
+    margin: 50% 9% 50% 9%;
 }
 
 .portal {
@@ -37,20 +38,74 @@ img {
 }
 
 .login-section {
-    margin-right: 15%;
+    margin: auto;
     text-align: center;
+}
+
+#title-1 {
+    font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#title-2 {
+    margin-right: 68%;
+    margin-bottom: 2%;
 }
 
 #username, #password {
     border-radius: 30px;
-    border: 2px solid #000;
-    padding: 15px;
+    padding: 15px 60px 15px 20px;
     width: 530px; 
     background-color: #D9D9D9;
-    color: #0000;
     font-size: 20px;
+}
+
+#svg-1, #svg-2 {
+    position: relative;
+    right: 60px;
+    top: 5px;
+}
+
+#submit {
+    border-radius: 30px;
+    padding: 15px;
+    width: 250px;
+    background-color: #D9D9D9;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    transition: ease-in-out 0.3s;
+}
+
+#submit:hover{
+    background-color: black;
+    color:rgb(115, 240, 240);
+    border: 2px solid rgb(115, 240, 240);
 }
 
 input::placeholder {
     color: #000;
+    font-weight: 600;
+}
+
+#resource {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 1%;
+    font-weight: 600;
+}
+
+#resource:hover {
+    text-decoration: underline;
+}
+
+.username-group, .password-group {
+    margin-bottom: 7%;
+}
+
+.login-button {
+    margin-bottom: 5%;
 }

@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-  </head>
-  <body>
-
 
     <div class="wrapper-container">
         <section class="portal">
@@ -24,16 +21,22 @@
             <div class="login-section">
                 <form class="login-form">
 
-                    <h3>Login</h3>
+                    <h1 id="title-1">Login</h1>
+                    
+                    
+                    <h3 id="title-2">{% block clearance %}Employee Login{% endblock %}</h3>
+                    
     
                     <!-- Username textbox field -->
                     <div class="username-group">
                         <input type="text" id="username" name="username" placeholder="Username">
+                        <svg id="svg-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                     </div>
     
                     <!-- Password textbox field -->
                     <div class="password-group">
-                        <input type="text" id="username" name="password" placeholder="Password">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                        <svg id="svg-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                     </div>
     
                     <!-- Login button -->
@@ -42,10 +45,12 @@
                     </div>
     
                     <!-- Resources -->
+                    
                     <div class="resources">
-                        <a href="" id="">Are you a Admin? Login Here</a></br>
-                        <a href="" id="">Forgot Password?</a>
+                        <a href="{%block resource-1%}struct.html{% endblock%}" id="resource">{% block resource %}Are you a Admin? Login Here{% endblock %}</a><br />
+                        <a href="" id="resource">Forgot Password?</a>
                     </div>
+                    
     
                 </form>
             </div>
@@ -53,5 +58,5 @@
         </section>
     </div>
 
-  </body>
+</body>
 </html>
