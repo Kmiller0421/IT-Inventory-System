@@ -13,7 +13,8 @@ body{
     align-items: center;
     justify-content: center; 
     min-height: 100vh;          /* Moves content downwards */
-    background-color: #76797B;
+    background: rgb(2,0,36);
+    background: linear-gradient(209deg, rgba(2,0,36,1) 4%, rgba(63,187,186,1) 100%);
 }
 
 .logo-section {
@@ -108,4 +109,66 @@ input::placeholder {
 
 .login-button {
     margin-bottom: 5%;
+}
+
+/**********************
+* Forgot Portal Style *
+***********************/
+
+#forgot-message {
+    margin-bottom: 3%;
+}
+
+#email {
+    border-radius: 30px;
+    padding: 15px 60px 15px 20px;
+    width: 530px; 
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+
+.email-group, .send-button {
+    margin-bottom: 4%;
+}
+
+#resource-1, #resource-2 {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+#resource-1 {
+    margin-bottom: 3%;
+}
+
+#forgot-svg1 {
+    position: relative;
+    right: 60px;
+    top: 5px;
+}
+
+#resource-1:hover, #resource-2:hover {
+    text-decoration: underline;
+}
+
+/**********************
+* ForgotPageSuccessful Portal Style *
+***********************/
+#resource-1:hover, #resource-2:hover {
+    text-decoration: underline;
+}
+
+#reset-resource-1, #reset-resource-2 {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+#checkmark {
+    margin: 5% 0 5% 0;
 }

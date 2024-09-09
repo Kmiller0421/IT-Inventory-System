@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Core Solutions</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="wrapper-container">
+        <section class="portal">
+
+            {% load static %}
+            <div class="logo-section">
+                <img src="{% static 'images/core-solutions-high-resolution-logo-transparent.png' %}" alt="Core Solutions Logo" width="400" height="170">
+            </div>
+
+            <div class="login-section">
+                <form class="login-form">
+
+                    <h1 id="title-1">Forgot Password</h1>
+                    
+                    
+                    <h3 id="forgot-message">Password Successfully Sent to Email</h3>
+                    
+                    <svg id="checkmark" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M91.6666 46.1666V50C91.6615 58.9851 88.752 67.7278 83.3722 74.9242C77.9923 82.1207 70.4303 87.3853 61.8139 89.9329C53.1976 92.4805 43.9885 92.1746 35.5602 89.0607C27.1319 85.9469 19.936 80.1921 15.0456 72.6544C10.1552 65.1168 7.83238 56.2002 8.42357 47.2346C9.01476 38.269 12.4883 29.7347 18.3261 22.9044C24.1639 16.0742 32.0532 11.3141 40.8174 9.33391C49.5816 7.35375 58.751 8.2597 66.9583 11.9166" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M91.6667 16.6666L50 58.375L37.5 45.875" stroke="#6ED172" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
+                    <!-- Resources -->
+                    <div class="reset-resources">
+                        <a href="base.html" id="reset-resource-1">Are you an Employee? Login here</a>
+                        <a href="adminLogin.html" id="reset-resource-2">Are you an Admin? Login here</a>
+                    </div>
+                    
+    
+                </form>
+            </div>
+            
+        </section>
+    </div>
+
+</body>
+</html>

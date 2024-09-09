@@ -4,8 +4,14 @@ from django.shortcuts import render, HttpResponse
 def home(request):
     return render(request, "base.html")
 
-def struct(request):
-    return render(request, "struct.html")
+def adminLogin(request):
+    return render(request, "adminLogin.html")
 
 def base(request):
     return render(request, "base.html")
+
+def forgotPage(request):
+    return render(request, "forgotPage.html")
+
+def forgotPageSuccessful(request):
+    return render(request, "forgotPageSuccessful.html")

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Core Solutions</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="wrapper-container">
+        <section class="portal">
+
+            {% load static %}
+            <div class="logo-section">
+                <img src="{% static 'images/core-solutions-high-resolution-logo-transparent.png' %}" alt="Core Solutions Logo" width="400" height="170">
+            </div>
+
+            <div class="login-section">
+                <form class="login-form">
+
+                    <h1 id="title-1">Forgot Password</h1>
+                    
+                    
+                    <h3 id="forgot-message">{%block forgot-message%}Retrieve password by entering email address{%endblock%}</h3>
+                    
+                    <!-- Email textbox field -->
+                    <div class="email-group">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <svg id="forgot-svg1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+    
+                    <!-- Send button -->
+                    <div class="send-button">
+                        <input type="submit" id="submit" name="submit" value="Send">
+                    </div>
+    
+                    <!-- Resources -->
+                    <div class="forgot-resources">
+                        <a href="base.html" id="resource-1">Are you an Employee? Login here</a>
+                        <a href="adminLogin.html" id="resource-2">Are you an Admin? Login here</a>
+                    </div>
+                    
+    
+                </form>
+            </div>
+            
+        </section>
+    </div>
+
+</body>
+</html>
